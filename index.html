@@ -14,8 +14,8 @@
         <script src="js/app.js"></script>
     </head>
     <body>
-        <div class="container" style="border: 3px solid red;">
-            <nav class="navbar navbar-default navbar-static-top">
+        <div class="container" style="border: 1px solid red;">
+            <nav class="navbar navbar-default">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#mainNavbar" aria-expanded="false">
@@ -44,27 +44,27 @@
                     </div>
                 </div>
             </nav>
-            <div class="container" ng-controller="FeaturedOffersController as feat">
+            <div class="container-fluid" ng-controller="FeaturedOffersController as feat">
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2 text-center"><h2>Featured Offers</h2></div>
                 </div>
                 <div class="row">
-                    <div ng-repeat="image in feat.images" style="margin: 10px 0;" class="col-lg-2 col-md-4 col-xs-6"><img class="thumbnail" style="border-top:none; border-bottom:none;" src="img/{{image.name}}.png" alt="no pic"/></div>
+                    <img ng-repeat="image in feat.images" style="margin: 10px 0; border-top:none; border-bottom: none;" class="col-lg-2 col-md-4 col-xs-6 img-thumbnail" src="img/{{image.name}}.png" alt="no pic"/>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="margin-bottom:50px;">
                 <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2 text-center">
                     <h2>Lorem Ipsum</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-xs-12 text-center"><a href="#"><img class="thumbnail" src="img/scissors_thumbnail.png" alt="no image"></a></div>
-                <div class="col-lg-3 col-md-6 col-xs-12 text-center"><a href="#"><img class="thumbnail" src="img/scissors_thumbnail.png" alt="no image"></a></div>
-                <div class="col-lg-3 col-md-6 col-xs-12 text-center"><a href="#"><img class="thumbnail" src="img/scissors_thumbnail.png" alt="no image"></a></div>
-                <div class="col-lg-3 col-md-6 col-xs-12 text-center"><a href="#"><img class="thumbnail" src="img/scissors_thumbnail.png" alt="no image"></a></div>
+            <div class="row" style="margin-bottom:60px">
+                <img class="col-lg-3 col-md-6 col-xs-12 text-center img-thumbnail" style="margin:10px 0;border:none;" src="img/scissors_thumbnail.png" alt="no image">
+                <img class="col-lg-3 col-md-6 col-xs-12 text-center img-thumbnail" style="margin:10px 0;border:none;" src="img/scissors_thumbnail.png" alt="no image">
+                <img class="col-lg-3 col-md-6 col-xs-12 text-center img-thumbnail" style="margin:10px 0;border:none;" src="img/scissors_thumbnail.png" alt="no image">
+                <img class="col-lg-3 col-md-6 col-xs-12 text-center img-thumbnail" style="margin:10px 0;border:none;" src="img/scissors_thumbnail.png" alt="no image">
             </div>
             <footer class="footer">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="col-lg-2 col-md-2 col-xs-12">
                         <h4>Company</h4>
                         <div class="col-lg-12"><a href="#">About</a></div>
@@ -90,7 +90,7 @@
                         <div class="input-group input-group has-feedback has-feedback-left">
                             <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="Type for Search">
                             <span class="input-group-btn">
-                                <button type="button" style="background-color: #95c562;" class="btn btn-secondary">GO</button>
+                                <button type="button" style="background-color: #95c562; color: white;" class="btn btn-secondary">GO</button>
                             </span>
                             <!--i class="glyphicon glyphicon-search form-control-feedback"></i-->
                         </div>
