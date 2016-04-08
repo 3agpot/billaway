@@ -1,0 +1,29 @@
+{
+  "name": "billaway",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "ui-router#^0.2.18"
+  },
+  "authors": [
+    "Rashid <rashid.makhmud@gmail.com>"
+  ],
+  "description": "Home page for the billaway site",
+  "main": "index.html",
+  "keywords": [
+    "billaway",
+    "angular",
+    "ui-router"
+  ],
+  "license": "MIT",
+  "homepage": "www.billaway.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/",
+    "test",
+    "tests"
+  ]
+}
