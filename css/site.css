@@ -6,3 +6,14 @@ footer
     color: #929292;
 }
 
+footer a
+{
+    color: #929292;
+}
+
+@media (max-width: 768px) {
+  footer h4 {
+    text-align:left;
+  }
+}
+
